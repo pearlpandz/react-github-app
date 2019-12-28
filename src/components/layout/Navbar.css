@@ -1,0 +1,13 @@
+.menu-items li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu-items li:hover a {
+    transition: 0.3s;
+    color: #ffffff;
+}
+
+.menu-items li a {
+    color: rgba(255, 255, 255, 0.75);
+}

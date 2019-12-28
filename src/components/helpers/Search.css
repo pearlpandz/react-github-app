@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-form input {
+    background: #d8d8d8;
+    color: #000000;
+    padding: 10px;
+    border: 2px solid #888888;
+    width: 300px;
+    border-right: 0;
+}
+
+.search-form input::placeholder {
+    color: #000000;
+}
+
+.search-form button {
+    background: #888888;
+    padding: 10px;
+    color: #ffffff;
+    border: 2px solid #888888;
+}
+
+.search-form input:focus {outline: none;}
+
+.search-form {
+    text-align: right;
+}
+
+.search-form form {
+display: inline-block;
+text-align: left;
+}
