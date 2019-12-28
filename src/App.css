@@ -1,6 +1,11 @@
 :root {
   --primary: rgb(102, 110, 202);
+  --secondary: rgb(255, 184, 53);
   --white: #ffffff;
+  --black: #000000;
+  --success: rgb(74, 219, 74);
+  --danger: rgb(235, 64, 64);
+  --gray: rgb(207, 202, 202);
 }
 
 *{
@@ -27,13 +32,40 @@ a {
 }
 
 
+/* button properties */
+.btn {
+  border-radius: 3px;
+  padding: 7px 15px;
+  background:var(--gray);
+  color: var(--white);
+}
+
+
 /* color */
 .bg-primary {
     background: var(--primary);
 }
+.bg-secondary {
+  background: var(--secondary)
+}
+.bg-light {
+  background: var(--gray);
+}
+.bg-dark {
+  background: var(--black);
+}
 
-.color-secondary {
+.color-primary {
   color: var(--white);
+}
+.color-secondary {
+  color: var(--black);
+}
+.success-color {
+  color: var(--success);
+}
+.danger-color {
+  color: var(--danger);
 }
 
 
@@ -41,11 +73,82 @@ a {
 .p-15 {
   padding: 15px;
 }
-
 .ptb-20 {
   padding: 20px 0;
 }
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
 
+/* font size */
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 26px
+}
+h4 {
+  font-size: 18px;
+}
+a {
+  font-size: 15px;;
+}
+p {
+  font-size: 14px;
+}
+
+
+/* flex properties */
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.li-style-none {
+  list-style: none;
+}
+.direction-column {
+  flex-direction: column;
+}
+.direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* transform properties */
+.img-circle {
+  border-radius: 50%;
+}
+
+
+/* width properties */
+.width-100 {
+  width: 100px
+}
+.width-200 {
+  width: 200px
+}
+.width-250 {
+  width: 250px
+}
+
+
+/* alignment properties */
+.text-center {
+  text-align: center;
+}
+
+
+/* other things */
 header {
   position: fixed;
   width: 100%;
@@ -56,4 +159,10 @@ header {
 
 .page-content {
   margin-top: 100px;
+}
+
+.inner-container {
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
 }

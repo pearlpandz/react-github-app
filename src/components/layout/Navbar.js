@@ -18,8 +18,8 @@ export class Navbar extends Component {
         return (
             <header className="bg-primary p-15 ">
                 <div className="container">
-                    <div className="flex">
-                        <a href="/" className="color-secondary"><i className={this.props.icon}></i> {this.props.title}</a>
+                    <div className="flex justify-between">
+                        <a href="/" className="color-primary"><i className={this.props.icon}></i> {this.props.title}</a>
                         <ul className="menu-items">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About</Link></li>

@@ -1,9 +1,3 @@
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .search-form input {
     background: #d8d8d8;
     color: #000000;
