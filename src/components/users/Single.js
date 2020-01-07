@@ -7,7 +7,7 @@ export class SingleUser extends Component {
         this.props.getUser(this.props.match.params.login);
     }
     render() {
-        const { name, company, email, avatar_url, locaiton, bio, blog, login, html_url, followers, following, public_repos, public_gists, hireable } = this.props.user;
+        const { name, company, email, avatar_url, bio, blog, login, followers, following, public_repos, public_gists, hireable } = this.props.user;
 
         const { loading } = this.props.loading;
 
@@ -44,10 +44,10 @@ export class SingleUser extends Component {
                                 {blog && <p className="mb-10">Website: {blog}</p>}
                                 {email && <p className="mb-10">Email: {email}</p>}
                                 <div className="btn-group flex mt-10">
-                                    <a href="#" className="btn bg-primary color-primary mr-5">Following <span className="badge">{following}</span></a>
-                                    <a href="#" className="btn bg-secondary color-primary mr-5">Followers <span className="badge">{followers}</span></a>
-                                    <a href="#" className="btn bg-light color-secondary mr-5">Public Repositories <span className="badge">{public_repos}</span></a>
-                                    <a href="#" className="btn bg-dark color-primary mr-5">Public Gists <span className="badge">{public_gists}</span></a>
+                                    <a href="/" className="btn bg-primary color-primary mr-5">Following <span className="badge">{following}</span></a>
+                                    <a href="/" className="btn bg-secondary color-primary mr-5">Followers <span className="badge">{followers}</span></a>
+                                    <a href="/" className="btn bg-light color-secondary mr-5">Public Repositories <span className="badge">{public_repos}</span></a>
+                                    <a href="/" className="btn bg-dark color-primary mr-5">Public Gists <span className="badge">{public_gists}</span></a>
                                 </div>
                             </div>
                         </div>
