@@ -32,12 +32,12 @@ export class SingleUser extends Component {
                             </Link>
                         </li>
                     </ul>
-                    <div className="profile inner-container" style={{'margin-top':'50px'}}>
+                    <div className="profile inner-container" style={{'marginTop':'50px'}}>
                         <div className="flex">
-                            <div className="pic text-center" style={{ 'flex-basis': '25%' }}>
+                            <div className="pic text-center" style={{ 'flexBasis': '25%' }}>
                                 <img className="img-circle" style={{'width': '175px'}} src={avatar_url} alt="" />
                             </div>
-                            <div className="info flex direction-column" style={{ 'flex-basis': '75%' }}>
+                            <div className="info flex direction-column" style={{ 'flexBasis': '75%' }}>
                                 <h4 className="mb-15">{name} ({login})</h4>
                                 {bio && <p className="mb-10">{bio}</p>}
                                 {company && <p className="mb-10">Company: {company}</p>}
